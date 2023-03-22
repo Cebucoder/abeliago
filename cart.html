@@ -15,27 +15,144 @@
 	<!-- promo-card-container.css -->
 	<link rel="stylesheet" type="text/css" href="./css/promo-container.css">
 
+	<!-- cart style ccs -->
+	<link rel="stylesheet" type="text/css" href="./css/min-cart.css">
+
 	<!-- css section -->
 
 	<title></title>
 </head>
 <body>
-	<h1>Cart</h1>
 
-	<div class="cart-items" id="cartItems">
+		<!-- main-container -->
+	<div class="main-container">
 		
+		<!-- navigation bar -->
+		<div class="navigation-container">
+			<!-- menu icon -->
+			<div class="menu-icon" id="menu-icon" onclick="showMenu()">
+				<ion-icon name="menu"></ion-icon>
+			</div>
+
+			<!-- shop-logo -->
+			<div class="shop-logo">
+				<a href="index.html"><img src="./logoImg/abeliago.png"></a>
+			</div>
+
+			<!-- shop-searchbar -->
+			<div class="search-min-container">
+				<div class="search-bar">
+					<input type="text" name="" placeholder="Search product here...">
+					<span><ion-icon name="search-sharp"></ion-icon></span>
+				</div>
+			</div>
+
+			<!-- shop cart && user-icon -->
+			<div class="shop-cart-user-icon">
+				<!-- cart-icon -->
+				<!-- <span class="cart" id="cart-icon" onclick="showCart()">
+					<ion-icon name="cart-outline"></ion-icon>
+				</span> -->
+				<!-- cuser-icon -->
+				<span class="user">
+					<img src="./logoImg/user.png" width="42px">
+				</span>
+			</div>
+
+			<!-- menu-container -->
+			<div class="menu-container" id="menu-container">
+				<ul>
+					<li><a href="">Apple</a></li>
+					<li><a href="">Samsung</a></li>
+					<li><a href="">Huawei</a></li>
+					<li><a href="">Oppo</a></li>
+					<li><a href="">Lenovo</a></li>
+					<li><a href="">Vivo</a></li>
+					<li><a href="">Asus</a></li>
+					<li><a href="">Xiaomi</a></li>
+				</ul>
+			</div>
+
+			<!-- cart-container -->
+			<div class="cart-container" id="cart-container">
+				<span class="cart-header">
+					<h3>Cart</h3>
+					<ion-icon name="cart-outline"></ion-icon>
+					
+				</span>
+
+				<!-- <div class="cart-items" id="cartItems"> -->
+					<!-- <div class="cart-items-header">
+						<span class="p">Product</span>
+						<span class="n">Product Name</span>
+						<span class="pr">Price</span>
+					</div> -->
+
+					<!-- product -->
+						
+						
+
+				<!-- </div> -->
+			</div>
+
+		</div>
+
+	<!-- cart-container -->
+	<div class="min-cart-container">
+		<div class="cart-items-header" style="width: 100%;">
+			<span class="p">Product</span>
+			<span class="n">Product Name</span>
+			<span class="pr">Price</span>
+					</div>
+		<div class="cart-items" id="cartItems">
+
+		<ul>
+			<!-- <li></li> -->
+		</ul>
+		
+		</div>
+		<div class="total-cont">
+			<span class="tots">Total:</span>
+			<span id="total">0</span>
+		</div>
 	</div>
+	
+
+</div>		
+	
 
 </body>
 
-<!-- <script src="./js/cart-function.js"> -->
-</script> 
+<!-- navigation js -->
+<script src="./js/min-navigation.js"></script>
 
+
+
+<!-- icons -->
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+<!-- swiper -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<!-- banner slider -->
+<script src="./js/banner-slider.js"></script>
+
+
+<!-- bootstrap cdn -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+
+<!-- cart script -->
+<!-- <script src="./js/cart-function.js"></script> -->
 <script src="./js/cart-script.js"></script>
+
 <script type="text/javascript">
-showCarts();
 	
+  showCarts();
+
+
 </script>
+	
 
 
 </html>
