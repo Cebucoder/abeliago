@@ -1,0 +1,205 @@
+.banner-slider{
+	width: 100%;
+	min-height: 450px;
+	height: auto;
+	background: #fff;
+	border-radius: 10px;
+	overflow: hidden;
+}
+.swiper{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: row;
+}
+
+/*swipre next and prev button*/
+
+ 
+.swiper-button-prev::after{
+	content: '';
+	position: absolute;
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	background: transparent;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: lightgray;
+	border:2px solid transparent;
+	left: 0;
+	transition: 0.3s;
+	font-size: 35px;
+
+}
+.swiper-button-prev:hover::after{
+	background: #f7f7f7;
+	color: #000;
+	border:2px solid #000;
+	transform: translateX(-5px);
+}
+.swiper-button-next::after{
+		content: '';
+	position: absolute;
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	background: transparent;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: lightgray;
+	border:2px solid transparent;
+	right: 0;
+	transition: 0.3s;
+	font-size: 35px;
+}
+.swiper-button-next:hover::after{
+	background: #f7f7f7;
+	color: #000;
+	border:2px solid #000;
+	transform: translateX(5px);
+}
+
+.swiper-wrapper{
+	display: flex;
+}
+.banner-cont{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: space between;
+	padding: 0 50px;
+	background: #fff;
+}
+.reverse{
+	flex-direction: row-reverse;
+}
+.reverse .banner-details{
+	margin-right: 60px;
+	margin-left: 0;
+}
+
+/*banner img*/
+.bannerImg{
+	width: 550px;
+	height: 450px;
+	-webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+.bannerImg img{
+	width: 100%;
+	height: auto;
+	object-fit: fill;
+}
+
+/*/bannerdetails*/
+.banner-details{
+	width: 600px;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	padding: 60px;
+	margin-left: 60px;
+	-webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+/* Animation fro dateails */
+
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0;
+        margin-top: 30px;
+    }
+    100% {opacity: 1;margin-top: 0px;}
+ }
+ 
+ @keyframes fadeIn {
+    0% {opacity: 0;margin-top: 30px;}
+    100% {opacity: 1;margin-top: 0px;}
+ }
+ 
+ .fadeIn {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+ }
+
+ /* Animation fro img */
+
+
+@-webkit-keyframes fade {
+    0% {
+        opacity: 0;
+        margin-top: -30px;
+    }
+    100% {opacity: 1;margin-top: 0px;}
+ }
+ 
+ @keyframes fade {
+    0% {opacity: 0;margin-top: -30px;}
+    100% {opacity: 1;margin-top: 0px;}
+ }
+ 
+ 
+ .fade {
+    -webkit-animation-name: fade;
+    animation-name: fade;
+ }
+
+.banner-details span{
+	display: flex;
+}
+.banner-details span h1{
+	font-weight: 600;
+	font-size: 50px;
+}
+.banner-details .light{
+	font-weight: normal;
+	padding-left: 15px;
+}
+.banner-details p{
+	font-size: 13px;
+}
+/*banner details*/
+.prod-btn{
+	width: auto;
+	height: auto;
+}
+.s-details{
+	margin-top: 30px;
+}
+.prod-btn{
+	margin-top: 30px;
+}
+.prod-btn button{
+	width: 180px;
+	height: 55px;
+	border-radius: 50px;
+	margin-right: 30px;
+	border: 2px solid #000;
+	background: #000;
+	color: #fff;
+	font-size: 14px;
+	transition: 0.3s;
+
+}
+.prod-btn button:hover{
+	transform: translateY(-5px);
+	background: #fff;
+	color: #000;
+}
+.prod-btn .info{
+	background: #fff;
+	color: #000;
+	border: 2px solid #000;
+}
+.prod-btn .info:hover{
+	background: #000;
+	color: #fff;
+}

@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+	<!-- style container -->
+
+	<!-- min-style.css -->
+	<link rel="stylesheet" type="text/css" href="../css/min-style.css">
+	<!-- min-navigation.css -->
+	<link rel="stylesheet" type="text/css" href="../css/min-navigation.css">
+
+	<!-- huawie-nova-10.css -->
+	<link rel="stylesheet" type="text/css" href="../xiaomi/xiaomi-12-pro.css">
+
+	<!-- promo-card-container.css -->
+	<link rel="stylesheet" type="text/css" href="../css/promo-container.css">
+
+	<!-- style container -->
+
+	<title>Info |Xiaomi 12 Pro</title>
+</head>
+<body>
+
+	<!-- main-container -->
+	<div class="main-container">
+		
+		<!-- navigation bar -->
+		<div class="navigation-container">
+			<!-- menu icon -->
+			<div class="menu-icon" id="menu-icon" onclick="showMenu()">
+				<ion-icon name="menu"></ion-icon>
+			</div>
+
+			<!-- shop-logo -->
+			<div class="shop-logo">
+				<a href="http://localhost:3000/"><img src="../logoImg/abeliago.png"></a>
+			</div>
+
+			<!-- shop-searchbar -->
+			<div class="search-min-container">
+				<div class="search-bar">
+					<input type="text" name="" placeholder="Search product here...">
+					<span><ion-icon name="search-sharp"></ion-icon></span>
+				</div>
+			</div>
+
+			<!-- shop cart && user-icon -->
+			<div class="shop-cart-user-icon">
+				<!-- cart-icon -->
+				<span class="cart" id="cart-icon" onclick="showCart()">
+					<ion-icon name="cart-outline"></ion-icon>
+				</span>
+				<!-- cuser-icon -->
+				<span class="user">
+					<img src="../logoImg/user.png" width="42px">
+				</span>
+			</div>
+
+			<!-- menu-container -->
+			<div class="menu-container" id="menu-container">
+				<ul>
+					<li><a href="">Apple</a></li>
+					<li><a href="">Samsung</a></li>
+					<li><a href="">Huawei</a></li>
+					<li><a href="">Oppo</a></li>
+					<li><a href="">Lenovo</a></li>
+					<li><a href="">Vivo</a></li>
+					<li><a href="">Asus</a></li>
+					<li><a href="">Xiaomi</a></li>
+					
+				</ul>
+			</div>
+
+			<!-- cart-container -->
+			<div class="cart-container" id="cart-container">
+				<span class="cart-header">
+					<h3>Cart</h3>
+					<ion-icon name="cart-outline"></ion-icon>
+				</span>
+
+				<div class="cart-items" id="cart-items">
+					<!-- <div class="cart-items-header">
+						<span class="p">Product</span>
+						<span class="n">Product Name</span>
+						<span class="pr">Price</span>
+					</div> -->
+
+					<!-- product -->
+						<li>
+							<div class="cart-img">
+								<img src="../cardImg/h1.png">
+							</div>
+							<div class="item-name">
+								<label>Xiaomi 12 Pro</label>
+							</div>
+							<span class="item-price">26,651</span>
+						</li>
+
+				</div>
+			</div>
+
+		</div>
+
+		<!-- Product View 1 -->
+		<div class="product-view-container">
+
+			<div class="productimg-container">
+				<swiper-container style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="mySwiper"
+				    thumbs-swiper=".mySwiper2" loop="true" space-between="5" navigation="true">
+				    <swiper-slide>
+				      <img src="../xiaomi/x1.png" />
+				    </swiper-slide>
+				    <swiper-slide>
+				      <img src="../xiaomi/x1.png" />
+				    </swiper-slide>
+				    <swiper-slide>
+				      <img src="../xiaomi/x1.png" />
+				    </swiper-slide>
+				    <swiper-slide>
+				      <img src="../xiaomi/x1.png" />
+				    </swiper-slide>
+				    <swiper-slide>
+				      <img src="../xiaomi/x1.png" />
+				    </swiper-slide>
+
+				    
+
+				</swiper-container>
+
+			  <swiper-container class="mySwiper2" loop="true" space-between="5" slides-per-view="5" free-mode="true"
+			    watch-slides-progress="true">
+				    <swiper-slide>
+				      <img src="../xiaomi/x1.png" />
+				    </swiper-slide>
+				    <swiper-slide>
+				      <img src="../xiaomi/x1.png" />
+				    </swiper-slide>
+				    <swiper-slide>
+				      <img src="../xiaomi/x1.png" />
+				    </swiper-slide>
+				    <swiper-slide>
+				      <img src="../xiaomi/x1.png" />
+				    </swiper-slide>
+				    <swiper-slide>
+				      <img src="../xiaomi/x1.png" />
+				    </swiper-slide>
+
+			  </swiper-container>
+
+
+
+			</div>
+
+
+			<div class="prod-spec-details">
+				<div class="prod-name-ratings">
+					<h1 class="n">Xiaomi 12 Pro</h1>
+					<span class="ratings">
+						<ion-icon name="star"></ion-icon>
+						<ion-icon name="star"></ion-icon>
+						<ion-icon name="star"></ion-icon>
+						<ion-icon name="star"></ion-icon>
+						<ion-icon name="star-half"></ion-icon>
+						<small>4.5/5.5</small>
+					</span>
+				</div>
+				<hr style="margin-top: 20px;">
+
+				<!-- avaibale color -->
+
+				<div class="prod-avail-color">
+					<label>Color</label>
+					<div class="color-cont">
+						<span class="color1"></span>
+						<small>Polo Blue</small>
+					</div>
+				</div>
+
+				<!-- specs -->
+				<div class="specs-cont">
+					<label>Key features</label>
+					<div class="specs-deatils">
+						<!-- <span> -->
+							<small>Ram: 8GB </small>
+							<small>Storage: 256GB,12GB + 256GB</small>
+						<!-- </span> -->
+
+						<!-- <span class="features"> -->
+							<small>50 MP Ultra Wide Angle Camera</small>
+							<small>480 Hz Origianal-Colour</small>
+							<small>120W Xiaomi HyperCharge</small>
+						<!-- </span> -->
+					</div>
+				</div>
+
+				<!-- qauntity -->
+					<div class="quantity-cont">
+						<button>-</button>
+						<label id="quant">1</label>
+						<button>+</button>
+					</div>
+
+				<!-- Total container -->
+				<div class="total-container">
+					<span>
+						<label>Total</label>
+							<div class="total-amount">
+								<span>₱</span>
+								<span id="amount">26,651</span>
+							</div>
+					</span>
+
+
+
+
+
+					<!-- checkout Butto -->
+					<div class="btn-container">
+						<button class="add-cart">Add To Cart</button>
+						<button>Checkout</button>
+					</div>
+					
+				</div>
+
+			</div>
+
+			
+		</div>
+
+
+		<!-- !-- promo cards -->
+		<div class="realted-features">
+			<h3>Realted Product</h3>
+		</div>
+
+		<div class="promo-card-container">
+
+			<!-- cards 1 -->
+			<div class="card-conts" >
+
+                <span class="new">
+                    <span class="tag">
+                        <img src="../cardImg/tag.png" alt="" />
+                    </span>
+                    <small>New</small>
+                </span>
+                <div class="card-img">
+                    <a href="./xiaomi/xiaomi-12-pro.html"><img src="../cardImg/s1.png" alt="" /></a>
+                </div>
+                <div class="card-details">
+                    <h3>Xiaomi<span><h3 class="light">12 Pro</h3></span></h3>
+                    <h3 class='sign'>₱<span class="price"> 26,651</span></h3>
+                    <div class="card-button">
+                        <a href="./xiaomi/xiaomi-12-pro.html">
+                        	<button class="info">Learn More</button>
+                        </a>
+                        <button>Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- cards 2 -->
+			<div class="card-conts" >
+
+                <span class="new">
+                    <span class="tag">
+                        <img src="../cardImg/tag.png" alt="" />
+                    </span>
+                    <small>New</small>
+                </span>
+                <div class="card-img">
+                    <a href="./huawei/huawei-nova-10.html"><img src="../cardImg/h1.png" alt="" /></a>
+                </div>
+                <div class="card-details">
+                    <h3>Huawei nova<span><h3 class="light">10 Pro</h3></span></h3>
+                    <h3 class='sign'>₱<span class="price"> 32,999</span></h3>
+                    <div class="card-button">
+                        <a href="./huawei/huawei-nova-10.html">
+                        	<button class="info">Learn More</button>
+                        </a>
+                        <a href=""><button>Add to Cart</button></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- cards 3 -->
+			<div class="card-conts" >
+
+                <span class="new">
+                    <span class="tag">
+                        <img src="../cardImg/tag.png" alt="" />
+                    </span>
+                    <small>New</small>
+                </span>
+                <div class="card-img">
+                    <a href=""><img src="../cardImg/s2.png" alt="" /></a>
+                </div>
+                <div class="card-details">
+                    <h3>iPhone 14<span><h3 class="light">Pro Max</h3></span></h3>
+                    <h3 class='sign'>₱<span class="price"> 70,990</span></h3>
+                    <div class="card-button">
+                        <a href="./huawei/huawei-nova-10.html">
+                        	<button class="info">Learn More</button>
+                        </a>
+                        <button>Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- cards 4 -->
+			<div class="card-conts" >
+
+                <span class="new">
+                    <span class="tag">
+                        <img src="../cardImg/tag.png" alt="" />
+                    </span>
+                    <small>New</small>
+                </span>
+                <div class="card-img">
+                    <a href=""><img src="../cardImg/s4.png" alt="" /></a>
+                </div>
+                <div class="card-details">
+                    <h3>Galaxy<span><h3 class="light">A54 5G</h3></span></h3>
+                    <h3 class='sign'>₱<span class="price"> 20,990</span></h3>
+                    <div class="card-button">
+                        <a href="./huawei/huawei-nova-10.html">
+                        	<button class="info">Learn More</button>
+                        </a>
+                        <button>Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+		</div>
+
+	</div>
+
+</body>
+
+<!-- navigation js -->
+<script src="../js/min-navigation.js"></script>
+
+<!-- icons -->
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+<!-- swipre -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
+
+</html>
