@@ -20,6 +20,43 @@ body{
 	margin: auto;
 	
 }
+.success{
+	width: 100%;
+	position: fixed;
+/*	top: -100%;*/
+	top: 10px;
+	margin: auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	z-index: 999;
+	opacity: 0;
+	transition: .3s;
+	visibility: hidden;
+	transform: scale(0);
+
+}
+.success span{
+	width: 300px;
+	height: 70px;
+/*	background: #1fae51;*/
+	background: #fff;
+	border: 2px solid #C83538;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #000;
+	border-radius: 10px;
+
+}
+
+.show-success{
+	visibility: visible;
+	opacity: 1;
+	transition: .2s;
+/*	top: 10px;*/
+	transform: scale(1);
+}
 
 
 

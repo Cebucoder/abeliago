@@ -26,6 +26,14 @@
 
 		<!-- main-container -->
 	<div class="main-container">
+
+		<div class="success" id="success">
+			<span>Item successfully added to cart</span>
+		</div>
+
+		<div class="success" id="delete">
+			<span>Item deleted successfully</span>
+		</div>
 		
 		<!-- navigation bar -->
 		<div class="navigation-container">
@@ -99,22 +107,33 @@
 
 	<!-- cart-container -->
 	<div class="min-cart-container">
-		<div class="cart-items-header" style="width: 100%;">
-			<span class="p">Product</span>
-			<span class="n">Product Name</span>
-			<span class="pr">Price</span>
-					</div>
-		<div class="cart-items" id="cartItems">
 
-		<ul>
-			<!-- <li></li> -->
-		</ul>
+		<h1>My cart</h1>
+
+		<div class="cart-left-content">
+			<div class="cart-items-header">
+				<span class="p">Product</span>
+				<span class="pr">Price</span>
+				<span class="act">Action</span>
+			</div>
 		
+			<div class="cart-items" id="cartItems">
+
+
+				<ul>
+					<!-- <li></li> -->
+				</ul>
+				
+			</div>
 		</div>
+
+
 		<div class="total-cont">
 			<span class="tots">Total:</span>
 			<span id="total">0</span>
 		</div>
+
+		
 	</div>
 	
 

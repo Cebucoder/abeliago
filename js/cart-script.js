@@ -2,6 +2,7 @@ let carts = [];
 
 // adding the item to array
 function addToCart(img,name,price){
+
 	let cartStorages = JSON.parse(localStorage.getItem("cartStorage")) || [];
 
 	// Add the new item to the array
@@ -12,8 +13,16 @@ function addToCart(img,name,price){
 	// Update the carts variable
 	carts = cartStorages;
 
+
 	// Update the cart display
 	showCarts();
+
+let success = document.getElementById("success");
+  success.classList.add("show-success");
+setTimeout(() => {
+
+    success.classList.remove("show-success");
+}, 2000);
 }
 
 
@@ -40,10 +49,11 @@ function showCarts() {
         <div class="item-name">
           <a href="cart.html"><label>${cartItems.productName}</label></a>
         </div>
-        <span class="item-price">₱ ${cartItems.productPrice}</span>
+        <span class="item-price">₱ ${cartItems.productPrice.toLocaleString()}</span>
         <span class="trash" onclick="removeItem(${itemNumber - 1})"><ion-icon name="trash-outline"></ion-icon></span>
       </li>
       `;
+
   });
 
   // Calculate the total and display it
@@ -68,5 +78,24 @@ function removeItem(itemNumber) {
   localStorage.setItem("cartStorage", JSON.stringify(cartStorages));
   carts = cartStorages;
   showCarts();
+  let success = document.getElementById("delete");
+  success.classList.add("show-success");
+setTimeout(() => {
+
+    success.classList.remove("show-success");
+},1000);
+}
+
+
+
+
+let scroll = document.getElementById("cartItems");
+
+function sample() {
+  if (scroll <= 300) {
+    scroll.classList.add('cart-add-scroll');
+  }else{
+    scroll.classList.remove('cart-add-scroll');
+  }
 }
 

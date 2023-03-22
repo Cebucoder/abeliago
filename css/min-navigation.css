@@ -269,11 +269,12 @@ Flush Mahogany
 /*cartitems*/
 .cart-items{
 	width: 100%;
-	min-height: 200px;
+	min-height: 100px;
 	max-height: 300px;
 	padding: 5px 10px;
 	overflow-y: scroll;
 }
+
 /* width */
 /*::-webkit-scrollbar {
   width: 10px;
