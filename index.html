@@ -86,7 +86,7 @@
 					<ion-icon name="cart-outline"></ion-icon>
 				</span>
 
-				<div class="cart-items" id="cart-items">
+				<div class="cart-items" id="cartItems">
 					<!-- <div class="cart-items-header">
 						<span class="p">Product</span>
 						<span class="n">Product Name</span>
@@ -94,7 +94,8 @@
 					</div> -->
 
 					<!-- product -->
-						<li>
+						
+							<li>
 							<div class="cart-img">
 								<img src="./cardImg/h1.png">
 							</div>
@@ -103,6 +104,7 @@
 							</div>
 							<span class="item-price">32,999</span>
 						</li>
+						
 
 				</div>
 			</div>
@@ -208,13 +210,13 @@
                     <a href="./xiaomi/xiaomi-12-pro.html"><img src="./cardImg/s1.png" alt="" /></a>
                 </div>
                 <div class="card-details">
-                    <h3>Xiaomi<span><h3 class="light">12 Pro</h3></span></h3>
-                    <h3 class='sign'>₱<span class="price"> 26,651</span></h3>
+                    <h3 id="prodName">Xiaomi<span><h3 class="light" id="prodName">12 Pro</h3></span></h3>
+                    <h3 class='sign'>₱<span class="price" id="price"> 26,651</span></h3>
                     <div class="card-button">
                         <a href="./xiaomi/xiaomi-12-pro.html">
                         	<button class="info">Learn More</button>
                         </a>
-                        <button>Add to Cart</button>
+                        <button onclick="addToCart('./cardImg/s1.png','Xiaomi 12 Pro', 26651)">Add to Cart</button>
                     </div>
                 </div>
             </div>
@@ -238,7 +240,7 @@
                         <a href="./huawei/huawei-nova-10.html">
                         	<button class="info">Learn More</button>
                         </a>
-                        <a href=""><button>Add to Cart</button></a>
+                        <button onclick="addToCart('./cardImg/h1.png','Huawei nov 10 Pro', 23999)">Add to Cart</button>
                     </div>
                 </div>
             </div>
@@ -319,6 +321,18 @@
 
 <!-- bootstrap cdn -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+
+<!-- cart script -->
+<!-- <script src="./js/cart-function.js"></script> -->
+<script src="./js/cart-script.js"></script>
+
+<script type="text/javascript">
+	
+showCarts();
+
+</script>
+
 
 
 
