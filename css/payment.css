@@ -42,7 +42,7 @@
 /*final-details*/
 .final-details{
 	display: flex;
-	justify-content: space-between;
+/*	justify-content: space-between;*/
 }
 /*cost-details-label*/
 .cost-details-label{
@@ -52,13 +52,30 @@
 .cost-all-details{
 	display: flex;
 	flex-direction: column;
-	width: 100%;
+	width: 290px;
 	margin-left: 20px;
 }
+.cost-details-label small{
+	margin: 2px 0;
+	font-weight: 500;
+}
 .cost-all-details small{
-	width: 100%;
-	background: pink;
+	padding-right: 5px;
 	display: flex;
+	margin: 2px 0;
+}
+.cost-all-details .cost-address-details{
+	display: flex;
+}
+
+/*.costumer-header*/
+.costumer-header{
+	width: 100%;
+	height: auto;
+	margin-bottom: 15px;
+}
+.costumer-header small{
+	font-weight: 500;
 }
 
 
