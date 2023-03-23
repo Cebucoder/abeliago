@@ -71,4 +71,53 @@ a{
 }
 
 
+/*warning*/
+.warning{
+	width: 100%;
+	height: 40px;
+	background: #C83538;
+	margin-top: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #fff;
+	font-size: 13px;
+	border-radius: 5px;
+	visibility: hidden;
+	opacity: 0;
+	transition: 0.2s;
+	transform: scale(0);
+}
+.show-warning{
+	visibility: visible;
+	opacity: 1;
+	transform: scale(1);
+	transition: 0.1s;
+}
+
+
+/*quantity cont*/
+.quantity-cont{
+	display: flex;
+}
+.quantity-cont button{
+  width: 20px;
+  height: 20px;
+  font-size: 16px;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+}
+.quantity-cont button:hover{
+  background: #000;
+  color: #fff;
+}
+.quantity-cont label{
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+}
+
 

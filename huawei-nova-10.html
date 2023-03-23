@@ -59,6 +59,7 @@
 			<div class="shop-cart-user-icon">
 				<!-- cart-icon -->
 				<span class="cart" id="cart-icon" onclick="showCart()">
+					<small class="cart-count" id="cart-count">0</small>
 					<ion-icon name="cart-outline"></ion-icon>
 				</span>
 				<!-- cuser-icon -->
@@ -87,6 +88,10 @@
 				<span class="cart-header">
 					<h3>Cart</h3>
 					<ion-icon name="cart-outline"></ion-icon>
+					<div class="total-cont">
+						<span class="tots">Total:</span>
+						<span id="total">0</span>
+					</div>
 				</span>
 
 				<div class="cart-items" id="cartItems">
@@ -178,13 +183,18 @@
 				<hr style="margin-top: 20px;">
 
 				<!-- avaibale color -->
-
+				<label class="color-label">Color</label>
 				<div class="prod-avail-color">
-					<label>Color</label>
-					<div class="color-cont">
-						<span class="color1"></span>
+					
+					<div class="color-cont active">
+						<span class="color1 c1"></span>
 						<small>Perano Blue</small>
 					</div>
+					<div class="color-cont">
+						<span class="color1 c2"></span>
+						<small>Mat Black</small>
+					</div>
+
 				</div>
 
 				<!-- specs -->
@@ -205,10 +215,14 @@
 				</div>
 
 				<!-- qauntity -->
+					<span class="warning" id="warning">
+						<small>Sorry the maximum you can add is 3 items only</small>
+					</span>
+
 					<div class="quantity-cont">
-						<button>-</button>
+						<button onclick="reduce()">-</button>
 						<label id="quant">1</label>
-						<button>+</button>
+						<button onclick="addquant()">+</button>
 					</div>
 
 				<!-- Total container -->
@@ -217,7 +231,7 @@
 						<label>Total</label>
 							<div class="total-amount">
 								<span>₱</span>
-								<span id="amount">32,999</span>
+								<span id="amount">23999</span>
 							</div>
 					</span>
 
@@ -228,7 +242,7 @@
 					<!-- checkout Butto -->
 					<div class="btn-container">
 						<button class="add-cart" onclick="addToCart('./cardImg/h1.png','Huawei nov 10 Pro', 23999)">Add To Cart</button>
-						<button>Checkout</button>
+						<a href="cart.html"><button>Checkout</button></a>
 					</div>
 					
 				</div>
@@ -244,105 +258,7 @@
 			<h3>Realted Product</h3>
 		</div>
 
-		<div class="promo-card-container">
 
-			<!-- cards 1 -->
-			<div class="card-conts" >
-
-                <span class="new">
-                    <span class="tag">
-                        <img src="./cardImg/tag.png" alt="" />
-                    </span>
-                    <small>New</small>
-                </span>
-                <div class="card-img">
-                    <a href="xiaomi-12-pro.html"><img src="./cardImg/s1.png" alt="" /></a>
-                </div>
-                <div class="card-details">
-                    <h3>Xiaomi<span><h3 class="light">12 Pro</h3></span></h3>
-                    <h3 class='sign'>₱<span class="price"> 26,651</span></h3>
-                    <div class="card-button">
-                        <a href="xiaomi-12-pro.html">
-                        	<button class="info">Learn More</button>
-                        </a>
-                        <button>Add to Cart</button>
-                    </div>
-                </div>
-            </div>
-
-            <!-- cards 2 -->
-			<div class="card-conts" >
-
-                <span class="new">
-                    <span class="tag">
-                        <img src="./cardImg/tag.png" alt="" />
-                    </span>
-                    <small>New</small>
-                </span>
-                <div class="card-img">
-                    <a href="huawei-nova-10.html"><img src="./cardImg/h1.png" alt="" /></a>
-                </div>
-                <div class="card-details">
-                    <h3>Huawei nova<span><h3 class="light">10 Pro</h3></span></h3>
-                    <h3 class='sign'>₱<span class="price"> 32,999</span></h3>
-                    <div class="card-button">
-                        <a href="huawei-nova-10.html">
-                        	<button class="info">Learn More</button>
-                        </a>
-                        <a href=""><button>Add to Cart</button></a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- cards 3 -->
-			<div class="card-conts" >
-
-                <span class="new">
-                    <span class="tag">
-                        <img src="./cardImg/tag.png" alt="" />
-                    </span>
-                    <small>New</small>
-                </span>
-                <div class="card-img">
-                    <a href=""><img src="./cardImg/s2.png" alt="" /></a>
-                </div>
-                <div class="card-details">
-                    <h3>iPhone 14<span><h3 class="light">Pro Max</h3></span></h3>
-                    <h3 class='sign'>₱<span class="price"> 70,990</span></h3>
-                    <div class="card-button">
-                        <a href="./huawei/huawei-nova-10.html">
-                        	<button class="info">Learn More</button>
-                        </a>
-                        <button>Add to Cart</button>
-                    </div>
-                </div>
-            </div>
-
-            <!-- cards 4 -->
-			<div class="card-conts" >
-
-                <span class="new">
-                    <span class="tag">
-                        <img src="../cardImg/tag.png" alt="" />
-                    </span>
-                    <small>New</small>
-                </span>
-                <div class="card-img">
-                    <a href=""><img src="../cardImg/s4.png" alt="" /></a>
-                </div>
-                <div class="card-details">
-                    <h3>Galaxy<span><h3 class="light">A54 5G</h3></span></h3>
-                    <h3 class='sign'>₱<span class="price"> 20,990</span></h3>
-                    <div class="card-button">
-                        <a href="./huawei/huawei-nova-10.html">
-                        	<button class="info">Learn More</button>
-                        </a>
-                        <button>Add to Cart</button>
-                    </div>
-                </div>
-            </div>
-
-		</div>
 
 
 	</div>
@@ -350,7 +266,7 @@
 </body>
 
 <!-- navigation js -->
-<script src="../js/min-navigation.js"></script>
+<script src="./js/min-navigation.js"></script>
 
 <!-- icons -->
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
@@ -362,12 +278,60 @@
 
 
 
-<script src="../js/cart-script.js"></script>
+<script src="./js/cart-script.js"></script>
 
 <script type="text/javascript">
 	
 showCarts();
 
 </script>
+
+
+<script type="text/javascript">
+	// Adding quantity
+function addquant() {
+  let quant = parseInt(document.getElementById("quant").innerHTML);
+  let currentAmount = parseInt(document.getElementById("amount").innerHTML.toLocaleString());
+
+  currentAmount = 23999;
+
+
+  quant += 1;
+  // Orprice = 23999;
+  document.getElementById("quant").innerHTML = quant;
+  document.getElementById("amount").innerHTML =  currentAmount * quant;
+  let warning = document.getElementById("warning");
+
+  if (quant == 4) {
+   
+    document.getElementById("quant").innerHTML = quant = 1;
+    document.getElementById("amount").innerHTML =  currentAmount = 23999;
+    warning.classList.add("show-warning");
+    setTimeout(() => {
+
+    warning.classList.remove("show-warning");
+    },4000);
+  }
+
+
+}
+
+function reduce() {
+  let quant = parseInt(document.getElementById("quant").innerHTML);
+  let currentAmount = parseInt(document.getElementById("amount").innerHTML);
+  let orprice = 23999;
+ 
+
+
+  if (quant > 1) {
+    quant -= 1;
+
+    document.getElementById("quant").innerHTML = quant;
+    document.getElementById("amount").innerHTML = currentAmount - orprice;
+  }
+  
+}
+</script>
+
 
 </html>

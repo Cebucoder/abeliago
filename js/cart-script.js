@@ -49,7 +49,7 @@ function showCarts() {
         <div class="item-name">
           <a href="cart.html"><label>${cartItems.productName}</label></a>
         </div>
-        <span class="item-price">₱ ${cartItems.productPrice.toLocaleString()}</span>
+        <span class="item-price" id="price">₱ ${cartItems.productPrice.toLocaleString()}</span>
         <span class="trash" onclick="removeItem(${itemNumber - 1})"><ion-icon name="trash-outline"></ion-icon></span>
       </li>
       `;
@@ -91,13 +91,10 @@ setTimeout(() => {
 
 
 
-// let scroll = document.getElementById("cartItems");
 
-// function sample() {
-//   if (scroll <= 300) {
-//     scroll.classList.add('cart-add-scroll');
-//   }else{
-//     scroll.classList.remove('cart-add-scroll');
-//   }
-// }
 
+
+// // Adding quantity
+
+
+  
