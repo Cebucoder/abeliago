@@ -11,6 +11,9 @@ body{
 	background: #f8f8f8;
 
 }
+a{
+	text-decoration: none;
+}
 .main-container{
 	width: 100%;
 	height: auto;
@@ -40,13 +43,22 @@ body{
 	width: 300px;
 	height: 70px;
 /*	background: #1fae51;*/
-	background: #fff;
-	border: 2px solid #C83538;
+	/*background: #fff;
+	border: 2px solid #C83538;*/
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	color: #000;
+/*	border-radius: 10px;*/
+
+	/* From https://css.glass */
+	background: rgba(225, 255, 255, 0.3);
 	border-radius: 10px;
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(5px);
+	-webkit-backdrop-filter: blur(5px);
+/*	border: 1px solid rgba(0, 0, 0, 0.3);*/
+	border: 1px solid #C83538;
 
 }
 

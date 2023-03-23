@@ -139,7 +139,27 @@ Flush Mahogany
 	border-radius: 50%;
 	margin-right: 20px;
 	color: #858585;
+	position: relative;
 }
+/*cart-count*/
+.cart-count{
+	position: absolute;
+	top: 0;
+	right: 0;
+	min-width: 20px;
+	width: auto;
+	height: 20px;
+	border-radius: 50px;
+	background: #BC0B0C;
+	color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 12px;
+	padding: 5px 5px;
+	z-index: 1;
+}
+
 .cart:hover{
 	background: #f7f7f7;
 	color: #BC0B0C;

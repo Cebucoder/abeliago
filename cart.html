@@ -27,6 +27,36 @@
 		<!-- main-container -->
 	<div class="main-container">
 
+		<div class="top-cart-header">
+			<h1>My cart</h1>
+
+			<div class="proccess-container">
+
+				<div class="process-line">
+					
+					<div class="line line1"></div>
+					<div class="line line2"></div>
+					<div class="line line3"></div>
+					
+				</div>
+
+				<div class="process">
+					<span class="proc-circ proc1"></span>
+					<small>My cart</small>
+				</div>
+				<div class="process">	
+					<span class="proc-circ proc2"></span>
+					<small>Checkout</small>
+				</div>	
+				<div class="process">
+					<span class="proc-circ proc3"></span>
+					<small>Pay</small>	
+				</div>
+				
+			</div>
+
+		</div>
+
 		<div class="success" id="success">
 			<span>Item successfully added to cart</span>
 		</div>
@@ -108,33 +138,40 @@
 	<!-- cart-container -->
 	<div class="min-cart-container">
 
-		<h1>My cart</h1>
+		<div class="left-cart-content">
+			
 
-		<div class="cart-left-content">
-			<div class="cart-items-header">
-				<span class="p">Product</span>
-				<span class="pr">Price</span>
-				<span class="act">Action</span>
+			<div class="cart-left-content">
+				<div class="cart-items-header">
+					<span class="p">Product</span>
+					<span class="pr">Price</span>
+					<span class="act">Action</span>
+				</div>
+			
+				<div class="cart-items" id="cartItems">
+					<ul>
+						<!-- <li></li> -->
+					</ul>
+				</div>
+
+				<div class="total-cont">
+					<span class="tots">Total:</span>
+					<span id="total">0</span>
+				</div>
+
 			</div>
-		
-			<div class="cart-items" id="cartItems">
 
-
-				<ul>
-					<!-- <li></li> -->
-				</ul>
-				
-			</div>
 		</div>
 
-
-		<div class="total-cont">
-			<span class="tots">Total:</span>
-			<span id="total">0</span>
+		<!-- checkout-details -->
+		<div class="right-deatils-container">
+			
 		</div>
 
-		
 	</div>
+
+	
+
 	
 
 </div>		

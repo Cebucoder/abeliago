@@ -58,10 +58,12 @@ function showCarts() {
 
   // Calculate the total and display it
   let totalAmount = 0;
+  let cartCount = 0;
   carts.forEach(function(cartItems) {
     totalAmount += Number(cartItems.productPrice);
   });
   document.getElementById("total").innerHTML = "₱" + totalAmount.toLocaleString();
+  document.getElementById("cart-count").innerHTML  = itemNumber++;
 }
 
 
@@ -89,13 +91,13 @@ setTimeout(() => {
 
 
 
-let scroll = document.getElementById("cartItems");
+// let scroll = document.getElementById("cartItems");
 
-function sample() {
-  if (scroll <= 300) {
-    scroll.classList.add('cart-add-scroll');
-  }else{
-    scroll.classList.remove('cart-add-scroll');
-  }
-}
+// function sample() {
+//   if (scroll <= 300) {
+//     scroll.classList.add('cart-add-scroll');
+//   }else{
+//     scroll.classList.remove('cart-add-scroll');
+//   }
+// }
 

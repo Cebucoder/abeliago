@@ -8,15 +8,15 @@
 	<!-- style container -->
 
 	<!-- min-style.css -->
-	<link rel="stylesheet" type="text/css" href="../css/min-style.css">
+	<link rel="stylesheet" type="text/css" href="./css/min-style.css">
 	<!-- min-navigation.css -->
-	<link rel="stylesheet" type="text/css" href="../css/min-navigation.css">
+	<link rel="stylesheet" type="text/css" href="./css/min-navigation.css">
 
 	<!-- huawie-nova-10.css -->
-	<link rel="stylesheet" type="text/css" href="../apple/iphone-14-pro.css">
+	<link rel="stylesheet" type="text/css" href="./css/huawei-nova-10.css">
 
 	<!-- promo-card-container.css -->
-	<link rel="stylesheet" type="text/css" href="../css/promo-container.css">
+	<link rel="stylesheet" type="text/css" href="./css/promo-container.css">
 
 	<!-- style container -->
 
@@ -26,6 +26,14 @@
 
 	<!-- main-container -->
 	<div class="main-container">
+
+		<div class="success" id="success">
+			<span>Item successfully added to cart</span>
+		</div>
+
+		<div class="success" id="delete">
+			<span>Item deleted successfully</span>
+		</div>
 		
 		<!-- navigation bar -->
 		<div class="navigation-container">
@@ -81,15 +89,15 @@
 					<ion-icon name="cart-outline"></ion-icon>
 				</span>
 
-				<div class="cart-items" id="cart-items">
-					<!-- <div class="cart-items-header">
+				<div class="cart-items" id="cartItems">
+					<div class="cart-items-header">
 						<span class="p">Product</span>
 						<span class="n">Product Name</span>
 						<span class="pr">Price</span>
-					</div> -->
+					</div>
 
 					<!-- product -->
-						<li>
+						<!-- <li>
 							<div class="cart-img">
 								<img src="../cardImg/h1.png">
 							</div>
@@ -97,7 +105,7 @@
 								<label>HUAWEI nova 10 Pro</label>
 							</div>
 							<span class="item-price">32,999</span>
-						</li>
+						</li> -->
 
 				</div>
 			</div>
@@ -107,23 +115,23 @@
 		<!-- Product View 1 -->
 		<div class="product-view-container">
 
-			<div class="productimg-container" id="fix-top">
+			<div class="productimg-container">
 				<swiper-container style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="mySwiper"
 				    thumbs-swiper=".mySwiper2" loop="true" space-between="5" navigation="true">
 				    <swiper-slide>
-				      <img src="../apple/i1.png" />
+				      <img src="./huawei/h1.png" />
 				    </swiper-slide>
 				    <swiper-slide>
-				      <img src="../apple/i2.png" />
+				      <img src="./huawei/h2.png" />
 				    </swiper-slide>
 				    <swiper-slide>
-				      <img src="../apple/i3.png" />
+				      <img src="./huawei/h3.png" />
 				    </swiper-slide>
 				    <swiper-slide>
-				      <img src="../apple/i4.png" />
+				      <img src="./huawei/h4.png" />
 				    </swiper-slide>
 				    <swiper-slide>
-				      <img src="../apple/i5.webp" />
+				      <img src="./huawei/h5.png" />
 				    </swiper-slide>
 
 				    
@@ -133,19 +141,19 @@
 			  <swiper-container class="mySwiper2" loop="true" space-between="5" slides-per-view="5" free-mode="true"
 			    watch-slides-progress="true">
 				    <swiper-slide>
-				      <img src="../apple/i1.png" />
+				      <img src="../huawei/h1.png" />
 				    </swiper-slide>
 				    <swiper-slide>
-				      <img src="../apple/i2.png" />
+				      <img src="./huawei/h2.png" />
 				    </swiper-slide>
 				    <swiper-slide>
-				      <img src="../apple/i3.png" />
+				      <img src="./huawei/h3.png" />
 				    </swiper-slide>
 				    <swiper-slide>
-				      <img src="../apple/i4.png" />
+				      <img src="./huawei/h4.png" />
 				    </swiper-slide>
 				    <swiper-slide>
-				      <img src="../apple/i5.webp" />
+				      <img src="./huawei/h5.png" />
 				    </swiper-slide>
 
 			  </swiper-container>
@@ -157,7 +165,7 @@
 
 			<div class="prod-spec-details">
 				<div class="prod-name-ratings">
-					<h1 class="n">iPhone 14 Pro</h1>
+					<h1 class="n">HUAWEI nova 9 Pro (Blue)</h1>
 					<span class="ratings">
 						<ion-icon name="star"></ion-icon>
 						<ion-icon name="star"></ion-icon>
@@ -175,7 +183,7 @@
 					<label>Color</label>
 					<div class="color-cont">
 						<span class="color1"></span>
-						<small>Boulder</small>
+						<small>Perano Blue</small>
 					</div>
 				</div>
 
@@ -184,15 +192,14 @@
 					<label>Key features</label>
 					<div class="specs-deatils">
 						<!-- <span> -->
-							<!-- <small>Ram: 8GB </small> -->
-							<small>Storage: 128GB</small>
+							<small>Ram: 8GB </small>
+							<small>Storage: 256GB</small>
 						<!-- </span> -->
 
 						<!-- <span class="features"> -->
-							<small>6.1 Inch Super Retina XDR OLED Display</small>
-							<small>A16 Bionic Chip</small>
-							<small>48MP Main | Ultra Wide (Pro Camera System)</small>
-							<small>12MP Front Camera</small>
+							<small>50 MP Ultra Vision Camera</small>
+							<small>120 Hz Origianal-Colour</small>
+							<small>66 W HUAWEI SuperCharge</small>
 						<!-- </span> -->
 					</div>
 				</div>
@@ -210,7 +217,7 @@
 						<label>Total</label>
 							<div class="total-amount">
 								<span>₱</span>
-								<span id="amount">70,990</span>
+								<span id="amount">32,999</span>
 							</div>
 					</span>
 
@@ -220,7 +227,7 @@
 
 					<!-- checkout Butto -->
 					<div class="btn-container">
-						<button class="add-cart">Add To Cart</button>
+						<button class="add-cart" onclick="addToCart('./cardImg/h1.png','Huawei nov 10 Pro', 23999)">Add To Cart</button>
 						<button>Checkout</button>
 					</div>
 					
@@ -244,18 +251,18 @@
 
                 <span class="new">
                     <span class="tag">
-                        <img src="../cardImg/tag.png" alt="" />
+                        <img src="./cardImg/tag.png" alt="" />
                     </span>
                     <small>New</small>
                 </span>
                 <div class="card-img">
-                    <a href="../xiaomi/xiaomi-12-pro.html"><img src="../cardImg/s1.png" alt="" /></a>
+                    <a href="xiaomi-12-pro.html"><img src="./cardImg/s1.png" alt="" /></a>
                 </div>
                 <div class="card-details">
                     <h3>Xiaomi<span><h3 class="light">12 Pro</h3></span></h3>
                     <h3 class='sign'>₱<span class="price"> 26,651</span></h3>
                     <div class="card-button">
-                        <a href="../xiaomi/xiaomi-12-pro.html">
+                        <a href="xiaomi-12-pro.html">
                         	<button class="info">Learn More</button>
                         </a>
                         <button>Add to Cart</button>
@@ -268,18 +275,18 @@
 
                 <span class="new">
                     <span class="tag">
-                        <img src="../cardImg/tag.png" alt="" />
+                        <img src="./cardImg/tag.png" alt="" />
                     </span>
                     <small>New</small>
                 </span>
                 <div class="card-img">
-                    <a href="./huawei/huawei-nova-10.html"><img src="../cardImg/h1.png" alt="" /></a>
+                    <a href="huawei-nova-10.html"><img src="./cardImg/h1.png" alt="" /></a>
                 </div>
                 <div class="card-details">
                     <h3>Huawei nova<span><h3 class="light">10 Pro</h3></span></h3>
                     <h3 class='sign'>₱<span class="price"> 32,999</span></h3>
                     <div class="card-button">
-                        <a href="./huawei/huawei-nova-10.html">
+                        <a href="huawei-nova-10.html">
                         	<button class="info">Learn More</button>
                         </a>
                         <a href=""><button>Add to Cart</button></a>
@@ -292,12 +299,12 @@
 
                 <span class="new">
                     <span class="tag">
-                        <img src="../cardImg/tag.png" alt="" />
+                        <img src="./cardImg/tag.png" alt="" />
                     </span>
                     <small>New</small>
                 </span>
                 <div class="card-img">
-                    <a href=""><img src="../cardImg/s2.png" alt="" /></a>
+                    <a href=""><img src="./cardImg/s2.png" alt="" /></a>
                 </div>
                 <div class="card-details">
                     <h3>iPhone 14<span><h3 class="light">Pro Max</h3></span></h3>
@@ -353,16 +360,14 @@
 <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
 
 
-</script>
 
 
-<script src="./js/cart-script.js"></script>
+<script src="../js/cart-script.js"></script>
 
 <script type="text/javascript">
 	
 showCarts();
 
 </script>
-
 
 </html>
