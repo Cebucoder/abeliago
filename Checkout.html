@@ -167,7 +167,71 @@
 
 				<!-- Billing Adress -->
 				<div class="checkout-cont">
-					
+					<label>Billing Address</label>
+
+					<div class="details-cont">
+						<!-- namesection -->
+						<div class="name-section">
+							<div class="name-cont">
+								<span><small>Fullname *</small></span>
+								<input type="" name="">
+							</div>
+
+						</div>
+
+						<div class="email">
+							<div class="email-cont">
+								<span><small>Email *</small></span>
+								<input type="email" name="">
+							</div>
+						</div>
+
+						<!-- countrycode and adress section -->
+						<div class="country-address-cont">
+							<div class="counrty-phone">
+								<div class="code">
+									<span><small>Country Code *</small></span>
+									<input type="" name="" placeholder="(+63) Philippines">
+								</div>
+								<div class="phone">
+									<span><small>Phone Number *</small></span>
+									<input type="text" name="" placeholder="">
+								</div>
+							</div>
+
+							<div class="province-city">
+								<div class="province">
+									<span><small>Province *</small></span>
+									<select>
+										<option></option>
+									</select>
+								</div>
+								<div class="city">
+									<span><small>City *</small></span>
+									<select>
+										<option></option>
+									</select>
+								</div>
+							</div>
+
+							<div class="district-address">
+								<div class="district">
+									<span><small>Province *</small></span>
+									<select>
+										<option></option>
+									</select>
+								</div>
+								<div class="address">
+									<span><small>City *</small></span>
+									<select>
+										<option></option>
+									</select>
+								</div>
+							</div>
+
+						</div>
+
+					</div>
 				</div>
 
 
@@ -177,7 +241,8 @@
 
 		<!-- checkout-details -->
 		<div class="right-deatils-container">
-			<div class="sum-content">
+		
+				<div class="sum-content">
 				<div class="summary-header">
 					<label>Summary</label>
 				</div>
@@ -200,8 +265,9 @@
 					<span id="total">0</span>
 				</div>
 
-				<span class="checkout-btn"><a href="Checkout.html"><button>Check Out</button></a></span>
+				<span class="checkout-btn"><button type="submit" onclick="pay()">Check Out</button></span>
 			</div>
+			
 
 
 			<div class="payment-method-cont">
@@ -259,6 +325,8 @@
 
 
 </script>
+
+
 
 
 
