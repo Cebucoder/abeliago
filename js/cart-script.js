@@ -63,6 +63,7 @@ function showCarts() {
     totalAmount += Number(cartItems.productPrice);
   });
   document.getElementById("total").innerHTML = "₱" + totalAmount.toLocaleString();
+  document.getElementById("total2").innerHTML = "₱" + totalAmount.toLocaleString();
   document.getElementById("cart-count").innerHTML  = itemNumber++;
 }
 

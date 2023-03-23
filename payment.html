@@ -18,6 +18,12 @@
 	<!-- cart style ccs -->
 	<link rel="stylesheet" type="text/css" href="./css/min-cart.css">
 
+	<!-- checkout.css -->
+	<link rel="stylesheet" type="text/css" href="./css/checkout.css">
+
+	<!-- paymnet.css -->
+	<link rel="stylesheet" type="text/css" href="./css/payment.css">
+
 	<!-- css section -->
 
 	<title></title>
@@ -109,7 +115,7 @@
 
 
 		<div class="top-cart-header">
-			<h1>My cart</h1>
+			<h1>Payment</h1>
 
 			<div class="proccess-container">
 
@@ -151,16 +157,42 @@
 					<span class="act">Action</span>
 				</div> -->
 			
-				<div class="cart-items" id="cartItems">
+				<!-- <div class="cart-items" id="cartItems">
 					<ul>
-						<!-- <li></li> -->
+						<li></li>
 					</ul>
-				</div>
+				</div> -->
 
-				<div class="total-cont">
+				<!-- <div class="total-cont">
 					<span class="tots"> Sub Total:</span>
 					<span id="total">0</span>
+				</div> -->
+
+				<!-- Billing Adress -->
+				<div class="checkout-cont">
+					<label>Billing Address</label>
+
+					
 				</div>
+
+
+				<!-- logistics partner -->
+				<div class="logistics-cont">
+					<label>Logistics Partner</label>
+					<small>Note: Delivery courier will vary based on your location </small>
+
+					<div class="logistics-dev-cont">
+						<div class="logistics-provider" id="lbc">
+							<img src="./logisticsImg/lbc.jpg">
+						</div>
+
+						<div class="logistics-provider" id="ninja">
+							<img src="./logisticsImg/ninja.png">
+						</div>
+					</div>
+
+				</div>
+
 
 			</div>
 
@@ -168,16 +200,42 @@
 
 		<!-- checkout-details -->
 		<div class="right-deatils-container">
-			<div class="sum-content">
+		
+				<div class="sum-content">
 				<div class="summary-header">
 					<label>Summary</label>
 				</div>
+
+				<!-- user details -->
+				<div class="costumer-header">
+					<small>Costumer Details</small>
+				</div>
+
+				<!-- deatils -->
+				<div class="final-details">
+					<span class="cost-details-label">
+						<small>Name:</small>
+						<small>Lastname:</small>
+						<small>Email:</small>
+						<small>Billing Address:</small>
+						
+					</span>
+					<span class="cost-all-details">
+					
+						<small id="cost-fname">Juan Dela</small>
+						<small id="cost-lname">Delacruz</small>
+						<small id="cost-email">delacruz@gmail.com</small>
+						<small id="cost-province">Cebu</small>
+						<small id="cost-city">Cebu City</small>
+						<small id="cost-disrict">Talisay</small>
+						<small id="cost-address">Cabancalan</small>
+					</span>
+					
+				</div>
+
 				<span class="voucher">
 					<small>Voucher</small>
-					<span>
-						<input type="text" name="" id="inputvoucher">
-						<button onclick="AddVoucher()">Apply Voucher</button>
-					</span>
+					
 
 					<div class="vouch-cont">
 						<small>Voucher Discount</small>
@@ -188,11 +246,33 @@
 
 				<div class="sub-total-cont">
 					<span class="tots">Sub Total:</span>
+					<span id="total">0</span>
+				</div>
+
+				<div class="vouch-cont">
+					<small>Shipping Feee</small>
+					<small class="voucher-val" id="Shipp">0</small>
+				</div>
+
+				<div class="sub-total-cont">
+					<span class="tots">Grand Total:</span>
 					<span id="total2">0</span>
 				</div>
 
-				<span class="checkout-btn"><a href="Checkout.html"><button>Check Out</button></a></span>
+
+				<!-- carsmallt items -->
+				<hr>
+				<small style="margin: 10px 0; font-weight: 500;">For Payment Items</small>
+
+				<div class="checkout-items cart-items" id="cartItems">
+					<ul></ul>
+				</div>
+
+				<span class="checkout-btn"><a href="payment.html"><button type="submit" >Proceed to payment</button></a></span>
 			</div>
+
+
+			
 
 
 			<div class="payment-method-cont">
@@ -250,6 +330,8 @@
 
 
 </script>
+
+
 
 
 

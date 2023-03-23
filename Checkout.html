@@ -204,12 +204,15 @@
 									<span><small>Province *</small></span>
 									<select>
 										<option></option>
+										<option>Cebu</option>
 									</select>
 								</div>
 								<div class="city">
 									<span><small>City *</small></span>
 									<select>
+										
 										<option></option>
+										<option>Cebu City</option>
 									</select>
 								</div>
 							</div>
@@ -218,13 +221,15 @@
 								<div class="district">
 									<span><small>District *</small></span>
 									<select>
-										<option></option>
+										<option id="option"></option>
+										<option id="option">Sample Address</option>
 									</select>
 								</div>
 								<div class="address">
 									<span><small>Address line*</small></span>
 									<select>
 										<option></option>
+										<option>Sample Address</option>
 									</select>
 								</div>
 							</div>
@@ -232,6 +237,24 @@
 						</div>
 
 					</div>
+				</div>
+
+
+				<!-- logistics partner -->
+				<div class="logistics-cont">
+					<label>Logistics Partner</label>
+					<small>Note: Delivery courier will vary based on your location </small>
+
+					<div class="logistics-dev-cont">
+						<div class="logistics-provider" id="lbc">
+							<img src="./logisticsImg/lbc.jpg">
+						</div>
+
+						<div class="logistics-provider" id="ninja">
+							<img src="./logisticsImg/ninja.png">
+						</div>
+					</div>
+
 				</div>
 
 
@@ -248,10 +271,10 @@
 				</div>
 				<span class="voucher">
 					<small>Voucher</small>
-					<span>
+					<!-- <span>
 						<input type="text" name="" id="inputvoucher">
 						<button onclick="AddVoucher()">Apply Voucher</button>
-					</span>
+					</span> -->
 
 					<div class="vouch-cont">
 						<small>Voucher Discount</small>
@@ -265,8 +288,29 @@
 					<span id="total">0</span>
 				</div>
 
-				<span class="checkout-btn"><button type="submit" onclick="pay()">Check Out</button></span>
+				<div class="vouch-cont">
+					<small>Shipping Feee</small>
+					<small class="voucher-val" id="Shipp">0</small>
+				</div>
+
+				<div class="sub-total-cont">
+					<span class="tots">Grand Total:</span>
+					<span id="total2">0</span>
+				</div>
+
+
+				<!-- carsmallt items -->
+				<hr>
+				<small style="margin: 10px 0; font-weight: 500;">For Payment Items</small>
+
+				<div class="checkout-items cart-items" id="cartItems">
+					<ul></ul>
+				</div>
+
+				<span class="checkout-btn"><a href="payment.html"><button type="submit" >Proceed to payment</button></a></span>
 			</div>
+
+
 			
 
 

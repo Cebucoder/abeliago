@@ -1,0 +1,64 @@
+.proc3::after{
+	content: '';
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	background: #000;
+	border-radius: 50%;
+
+} 
+.line3::after{
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 2px;
+	background: #000;
+	left: 0;
+	transition: 0.5s;
+
+}
+/*sum-content*/
+.sum-content{
+	display: flex;
+	flex-direction: column;
+}
+.cart-items li{
+	padding-right: 15px;
+}
+.cart-items .trash{
+	display: none;
+}
+
+/*costumer-header*/
+.costumer-header{
+	width: 100%;
+	height: auto;
+}
+.costumer-header label{
+	font-size: 16px;
+	font-weight: 500px;
+}
+
+/*final-details*/
+.final-details{
+	display: flex;
+	justify-content: space-between;
+}
+/*cost-details-label*/
+.cost-details-label{
+	display: flex;
+	flex-direction: column;
+}
+.cost-all-details{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	margin-left: 20px;
+}
+.cost-all-details small{
+	width: 100%;
+	background: pink;
+	display: flex;
+}
+
+
