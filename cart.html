@@ -173,10 +173,10 @@
 					<label>Summary</label>
 				</div>
 				<span class="voucher">
-					<small>Voucher</small>
+					<small class='vouchericon'><ion-icon name="ticket-outline"></ion-icon>Have a voucher</small>
 					<span>
-						<input type="text" name="" id="inputvoucher">
-						<button onclick="AddVoucher()">Apply Voucher</button>
+						<input type="text" name="" id="inputvoucher"/>
+						<button onclick=AddVoucher()>Apply Voucher</button>
 					</span>
 
 					<div class="vouch-cont">
@@ -188,10 +188,11 @@
 
 				<div class="sub-total-cont">
 					<span class="tots">Sub Total:</span>
-					<span id="total2">0</span>
+					<!-- id="total2" -->
+					<span id="total">0</span>
 				</div>
 
-				<span class="checkout-btn"><a href="Checkout.html"><button>Check Out</button></a></span>
+				<a href="Checkout.html"><span class="checkout-btn"><button type="submit" >Check Out</button></span></a>
 			</div>
 
 
@@ -257,44 +258,27 @@
 <!-- voucher discount -->
 <script type="text/javascript">
 	
+	function AddVoucher(){
+  let voucherInt = document.getElementById("inputvoucher").value;
+  let totalAmount = parseInt(document.getElementById("total").innerHTML);
+  let voucher = "abeliagoxyz";
+//   let defaultVoucherAmount = 300;
 
+  // Check if there is a stored value for the voucher amount in local storage
+//   let vouchStorage = JSON.parse(localStorage.getItem("vouchStorage")) || { prodVouch: defaultVoucherAmount };
+  
 
-
-
-function AddVoucher(){
-	let voucherInt = document.getElementById("inputvoucher").value;
-	let totalAmount  = document.getElementById("total").innerHTML;
-
-	// promt error and success
-
-	// let success = document.getElementById("success");
-	// let error = document.getElementById("error");
-
-
-	let voucher = "abeliagoxyz";
-	let voucherAmount = 300;
-	// totalAmount += Number(cartItems.productPrice);
-	// let defaultpass = "cebucoder101";
-	// vouch = totalAmount
-
-	if (voucherInt == voucher) {
-		alert("correct");
-		// success.classList.add("show-success");
-		// error.classList.remove("show-error");
-		document.getElementById("voucher-val").innerHTML = voucherAmount;
-		document.getElementById("total").innerHTML = "₱" + (totalAmount - voucherAmount);
-
-
-
-
-		// for testing
-	}else{
-		// error.classList.add("show-error");
-		// success.classList.remove("show-success");
-		alert("wrong");
-
-	}
-
+  if (voucherInt == voucher) {
+	let defaultVoucherAmount = 300;
+    alert("Voucher Applied");
+	localStorage.setItem("vouchStorage", JSON.stringify({ prodVouch: defaultVoucherAmount }));
+	let vouchStorage = JSON.parse(localStorage.getItem("vouchStorage")) || { prodVouch: defaultVoucherAmount };
+	document.getElementById("voucher-val").innerHTML = `${vouchStorage.prodVouch}`;
+    let discount = totalAmount - vouchStorage.prodVouch;
+    document.getElementById("total2").innerHTML = "₱" + discount;
+  } else {
+    alert("Invalid Voucher");
+  }
 }
 
 

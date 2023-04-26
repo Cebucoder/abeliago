@@ -228,6 +228,7 @@ padding-right: 30px;
 	padding: 0 20px;
 }
 /*.sum-content*/
+/*.sum-content*/
 .sum-content{
 	width: 100%;
 	height: auto;
@@ -246,6 +247,15 @@ padding-right: 30px;
 	align-items: center;
 	font-weight: bold;
 	color: #494848;
+}
+.vouchericon{
+	display: flex;
+	align-items: center;
+}
+.vouchericon ion-icon{
+	font-size: 20px;
+	color: #C83538;
+	margin-right: 15px;
 }
 .voucher{
 	width: 100%;

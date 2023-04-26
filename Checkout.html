@@ -365,61 +365,21 @@
 
 <script type="text/javascript">
 	
+	let itemNumber = true;
+	
   showCarts();
+
 
 
 </script>
 
 
 
+<script>
 
 
-
-<!-- voucher discount -->
-<script type="text/javascript">
-	
-
-
-
-
-function AddVoucher(){
-	let voucherInt = document.getElementById("inputvoucher").value;
-	let totalAmount  = document.getElementById("total").innerHTML;
-
-	// promt error and success
-
-	// let success = document.getElementById("success");
-	// let error = document.getElementById("error");
-
-
-	let voucher = "abeliagoxyz";
-	let voucherAmount = 300;
-	// totalAmount += Number(cartItems.productPrice);
-	// let defaultpass = "cebucoder101";
-	// vouch = totalAmount
-
-	if (voucherInt == voucher) {
-		alert("correct");
-		// success.classList.add("show-success");
-		// error.classList.remove("show-error");
-		document.getElementById("voucher-val").innerHTML = voucherAmount;
-		document.getElementById("total").innerHTML = "₱" + (totalAmount - voucherAmount);
-
-
-
-
-		// for testing
-	}else{
-		// error.classList.add("show-error");
-		// success.classList.remove("show-success");
-		alert("wrong");
-
-	}
-
-}
-
-
-
+	let vouchStorage = JSON.parse(localStorage.getItem("vouchStorage")) || { prodVouch: defaultVoucherAmount };
+	document.getElementById("voucher-val").innerHTML = `${vouchStorage.prodVouch}`;
 </script>
 	
 

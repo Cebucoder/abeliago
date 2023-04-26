@@ -1,0 +1,125 @@
+/*------------------footer-------------*/
+.footer{
+	width: 100%;
+	max-width: 1500px;
+	margin: auto;
+	height: auto;
+	background: #f7f7f7;
+	margin-top: 100px;
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+	padding: 30px;
+	justify-content: space-between;
+}
+.foot-cont{
+	width: auto;
+	height: auto;
+/*	background: grey;*/
+	display: flex;
+	flex-direction: column;
+/*	padding-left: 30px;*/
+	font-family: 'Poppins' ,sans-serif;
+	margin: 10px;
+}
+.foot-cont label{
+	padding-bottom: 10px;
+	padding-top: 10px;
+	font-weight: bold;
+	font-size: 14px;
+	text-transform: uppercase;
+}
+.foot-cont a{
+	padding-top: 10px;
+	font-size: 12px;
+	color: #000;
+	text-decoration: none;
+	padding: 5px 0;
+}
+.foot-cont a:hover{
+	color: #FF6600;
+}
+.pay-logo{
+	display: flex;
+}
+.pay-logo span{
+	background: #fff;
+	width: 70px;
+	height: 35px;
+	display: flex;
+/*	flex-direction: row;*/
+	align-items: center;
+	justify-content: center;
+	margin: 5px;
+	box-shadow: 0 0 10px 2px lightgray;
+	cursor: pointer;
+}
+.brand{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+.brand i{
+	padding-right: 10px;
+}
+.download{
+/*	background: pink;*/
+	width: 220px;
+	display: flex;
+}
+.download span{
+	box-shadow: 0 0 10px 2px lightgray;
+	cursor: pointer;
+}
+.apps{
+	width: 125px;
+}
+.apps span{
+	box-shadow: 0 0 10px 2px #f7f7f7;
+	cursor: pointer;
+}
+.apps img{
+	width: 100%;
+/*	box-shadow: 0 0 10px 2px lightgray;*/
+cursor: pointer;
+
+}
+
+
+/*related searches*/
+.related-search{
+	width: 100%;
+	height: auto;
+	padding: 30px;
+	margin: auto;
+    max-width: 1500px;
+    margin-top: 30px;
+	background: #fff;
+	border-radius: 5px;
+}
+.related-search h1{
+	color: #000;
+	font-weight: 500;
+	font-size: 16px;
+	padding-bottom: 20px;
+}
+.searches{
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+.searches span{
+	padding: 5px 20px;
+	border: 1px solid lightgrey;
+	border-radius: 50px;
+	font-size: 13px;
+	margin: 10px 10px 0 5px;
+	color: grey;
+	cursor: pointer;
+}
+.searches span:hover{
+	border: 1px solid black;
+}
+/*-------------------------footer end-------------------------*/
